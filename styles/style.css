@@ -453,7 +453,7 @@ hr{
 }
 
 .footer-column h3{
-    text-align: left;
+    text-align: center;
     color: white;
     font-weight: bold;
     font-size: 1.2em;
@@ -463,6 +463,51 @@ hr{
     text-decoration: none;
     text-align: left;
     color: rgba(255, 255, 255, 0.50);
+}
+
+.fitness-classes{
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.10);   
+}
+
+.class-intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.class-intro h1{
+    width: 50%;
+    font-weight: bolder;
+    font-size: 3em;
+    color: white;
+}
+
+.class-intro p{
+    width: 50%;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.challenge-fitness{
+    color: rgba(230, 83, 60, 1.00);
+}
+
+.challenge-perfect{
+    color: rgba(230, 83, 60, 1.00);
+}
+
+.class-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.card-name{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: white;
+    position: relative;
+    top: -70px;
 }
 
 @media screen and (max-width: 576px) {
@@ -586,8 +631,21 @@ hr{
         gap: 20px;
     }
 
+    .footer-column h3{
+        text-align: left;
+    }
+
     .footer-column ul li a{
         position: relative;
         left: -40px;
+    }
+
+    .class-intro{
+        flex-direction: column;
+    }
+
+    .class-card{
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 100px;
     }
 }
